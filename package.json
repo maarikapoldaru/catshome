@@ -3,9 +3,11 @@
   "repository": "https://github.com/kta-20e/catshome",
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "prettier:fix": "prettier --write ."
   },
   "devDependencies": {
+    "prettier": "2.6.1",
     "vuepress": "^1.9.7"
   }
 }
