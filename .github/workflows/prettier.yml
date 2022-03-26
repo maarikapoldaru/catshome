@@ -1,7 +1,7 @@
-name: Run prettier
+name: Run pretttier
 on:
   push:
-    branches: ['*']
+    branches: ["*"]
 jobs:
   prettier:
     runs-on: ubuntu-latest
