@@ -1,4 +1,4 @@
-name: Run pretttier
+name: Run prettier
 on:
   push:
     branches: ["*"]
