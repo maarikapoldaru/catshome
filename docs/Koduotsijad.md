@@ -3,6 +3,7 @@ footer: Copyright © 2022
 ---
 
 # Kassid otsivad uut kodu
+
 <div class="container">
   <div class="row">
     <div class="col">
