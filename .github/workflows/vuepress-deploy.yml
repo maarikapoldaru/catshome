@@ -2,34 +2,21 @@ name: Deploy to GitHub pages
 on:
   push:
     branches: [main]
+  pull_request:
+    types: [closed]
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      # Pull the code
       - name: Checkout
         uses: actions/checkout@v2
-      #with:
-      #persist-credentials: false
-      #fetch-depth: 0
 
-      #  Generating static files/Build
-      - name: Generate static vuepress files
-        uses: actions/setup-node@v1
-        with:
-          node-version: "16.x"
-      - run: npm ci
-      - run: npm install -D vuepress
-      - run: npm run docs:build
-
-      #  Deploy to  GitHub Pages/Deploy
-      - name: push to destination branch
-        uses: ad-m/github-push-action@v0.5.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          #  Deploy to  gh-pages  Branch , because  main  The branch stores the source code,
-          # and  gh-pages  Branches are used to store the generated static files
-          branch: gh-pages
-          force: true
-          directory: ./docs/.vuepress/dist
+      - name: vuepress-deploy
+        uses: jenkey2011/vuepress-deploy@master
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          TARGET_REPO: kta-20e/catshome
+          TARGET_BRANCH: gh_pages
+          BUILD_SCRIPT: npm i && npm run docs:build
+          BUILD_DIR: docs/.vuepress/dist/
