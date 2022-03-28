@@ -9,14 +9,14 @@ footer: Copyright © 2022
     <div class="col">
       <h3>Toomas</h3>
       <picture>
-        <img src="/assets/img/Kiisu.jpg" alt="Cat" style="width:300px;">
+        <img src="/catshome/assets/img/Kiisu.jpg" alt="Cat" style="width:300px;">
       </picture>
       <p>Kass otsib uut kodu</p>
     </div>
     <div class="col">
       <h3>Toomas</h3>
       <picture>
-        <img src="/assets/img/Kiisu.jpg" alt="Cat" style="width:300px;">
+        <img src="/catshome/assets/img/Kiisu.jpg" alt="Cat" style="width:300px;">
       </picture>
       <p>Kass otsib uut kodu</p>
     </div>
