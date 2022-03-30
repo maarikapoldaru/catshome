@@ -29,6 +29,7 @@ module.exports = {
             link: "/Vabatahtlik/",
           },
           { text: "Kontakt", link: "/Kontakt/" },
+          { text: "Blogi", link: "/blog/" },
           {
             text: "Languages",
             ariaLabel: "Language Menu",
@@ -39,6 +40,18 @@ module.exports = {
             ],
           },
         ],
+        sidebar: {
+          '/blog/': [
+            {
+            title: 'Kõik postitused',
+            collapsable: false,
+            children: [
+              'my-first-blog',
+              'my-second-blog'
+            ]
+            }
+          ]
+        }
       },
     },
     footer: true,
