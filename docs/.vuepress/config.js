@@ -41,17 +41,14 @@ module.exports = {
           },
         ],
         sidebar: {
-          '/blog/': [
+          "/blog/": [
             {
-            title: 'Kõik postitused',
-            collapsable: false,
-            children: [
-              'my-first-blog',
-              'my-second-blog'
-            ]
-            }
-          ]
-        }
+              title: "Kõik postitused",
+              collapsable: false,
+              children: ["my-first-blog", "my-second-blog"],
+            },
+          ],
+        },
       },
     },
     footer: true,
