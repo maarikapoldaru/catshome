@@ -5,10 +5,10 @@ module.exports = {
     [
       "link",
       {
-        rel:"stylesheet",
-        href: "https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"
-      }
-    ]
+        rel: "stylesheet",
+        href: "https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css",
+      },
+    ],
   ],
   locales: {
     "/": {
