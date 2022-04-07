@@ -19,6 +19,7 @@ module.exports = {
           { text: "Home", link: "/" },
           { text: "Otsivad kodu", link: "/Koduotsijad/" },
           { text: "Uues kodus", link: "/Kodus/" },
+          { text: "Tingimused Loomavõtjale", link: "/Tingimused/" },
           {
             text: "Toeta meid",
             ariaLabel: "Menu1",
