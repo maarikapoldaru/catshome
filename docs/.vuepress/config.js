@@ -52,6 +52,7 @@ module.exports = {
           { text: "Külasta meid", link: "/Kulasta/" },
           { text: "Kontakt", link: "/Kontakt/" },
           { text: "Blogi", link: "/blog/" },
+          { text: "Asukoht", link: "/Asukoht/" },
           {
             text: "Keel",
             ariaLabel: "Language Menu",
