@@ -64,7 +64,6 @@ module.exports = {
         ],
       },
     },
-
     plugins: [
       [
         "vuepress-plugin-mailchimp",
@@ -76,17 +75,6 @@ module.exports = {
         },
       ],
     ],
-    footer: {
-      contact: [
-        {
-          type: "github",
-          link: "https://github.com/vuejs/vuepress",
-        },
-        {
-          type: "twitter",
-          link: "https://github.com/vuejs/vuepress",
-        },
-      ],
-    },
+    footer: true,
   },
 };
