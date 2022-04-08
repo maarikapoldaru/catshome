@@ -43,4 +43,15 @@ module.exports = {
     },
     footer: true,
   },
+  plugins: [
+    [
+      "vuepress-plugin-mailchimp",
+      {
+        endpoint: "https://gmail.us14.list-manage.com/subscribe/post?u=1129373554c4237148013af45&amp;id=100a06f5ff",
+        title: "Uudiskiri",
+        content: "Liituge meie uudiskirjaga",
+        submitText: "Liituge",
+      },
+    ],
+  ],
 };
