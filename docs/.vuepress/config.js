@@ -29,7 +29,7 @@ module.exports = {
             link: "/Vabatahtlik/",
           },
           { text: "Kontakt", link: "/Kontakt/" },
-          { text: "Blogi", link: "/blog/" },
+          { text: "Blogi", link: "/Blog/" },
           {
             text: "Languages",
             ariaLabel: "Language Menu",
