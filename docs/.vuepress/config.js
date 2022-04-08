@@ -12,58 +12,81 @@ module.exports = {
   ],
   locales: {
     "/": {
-      title: "Catshome",
+      title: "Kurru Murru varjupaik",
       description: "Tere tulemast kasside kodulehele!",
     },
   },
 
   themeConfig: {
-    repo: "/catshome/",
     docsDir: "docs",
-    logo: "/assets/img/cat.png",
+    logo: "assets/img/KurruMurru-varjupaik.png",
+    search: false,
     locales: {
       "/": {
-        search: true,
-
         nav: [
-          { text: "Home", link: "/" },
-          { text: "Otsivad kodu", link: "/Koduotsijad/" },
-          { text: "Uues kodus", link: "/Kodus/" },
-          { text: "Tingimused Loomavõtjale", link: "/Tingimused/" },
+          { text: "Esileht", link: "/" },
+          {
+            text: "Kassid",
+            ariaLabel: "Cat Menu",
+            items: [
+              { text: "Otsivad kodu", link: "/Koduotsijad/" },
+              { text: "Uues kodus", link: "/Kodus/" },
+            ],
+          },
+          {
+            text: "Kasulikku",
+            ariaLabel: "FAQ menu",
+            items: [
+              { text: "Tingimused loomavõtjale", link: "/Tingimused/" },
+              { text: "Korduma kippuvad küsimused", link: "/KKK/" },
+            ],
+          },
           {
             text: "Toeta meid",
-            ariaLabel: "Menu1",
+            ariaLabel: "Support Menu",
             items: [
               { text: "Tule vabatahtlikuks", link: "/Vabatahtlik" },
               { text: "Anneta", link: "/Anneta" },
             ],
-            link: "/Vabatahtlik/",
           },
+          { text: "Külasta meid", link: "/Kulasta/" },
           { text: "Kontakt", link: "/Kontakt/" },
-          { text: "Galerii", link: "/Galerii/" },
+          { text: "Blogi", link: "/Blogi/" },
           {
-            text: "Languages",
+            text: "Keel",
             ariaLabel: "Language Menu",
             items: [
-              { text: "EST", link: "/language/estonian/" },
-              { text: "ENG", link: "/language/english/" },
-              { text: "RUS", link: "/language/russian/" },
+              { text: "EST", link: "/Keel/ET/" },
+              { text: "ENG", link: "/Keel/EN/" },
+              { text: "RUS", link: "/Keel/RU/" },
             ],
           },
         ],
       },
     },
-    footer: true,
-  },
-  plugins: [
-    [
-      "vuepress-plugin-mailchimp",
-      {
-        endpoint: "https://gmail.us14.list-manage.com/subscribe/post?u=1129373554c4237148013af45&amp;id=100a06f5ff",
-        title: "Uudiskiri",
-        content: "Liituge meie uudiskirjaga",
-        submitText: "Liituge",
-      },
+
+    plugins: [
+      [
+        "vuepress-plugin-mailchimp",
+        {
+          endpoint: "https://gmail.us14.list-manage.com/subscribe/post?u=1129373554c4237148013af45&amp;id=100a06f5ff",
+          title: "Uudiskiri",
+          content: "Liituge meie uudiskirjaga",
+          submitText: "Liituge",
+        },
+      ],
     ],
-  ],
+    footer: {
+      contact: [
+        {
+          type: "github",
+          link: "https://github.com/vuejs/vuepress",
+        },
+        {
+          type: "twitter",
+          link: "https://github.com/vuejs/vuepress",
+        },
+      ],
+    },
+  },
 };
