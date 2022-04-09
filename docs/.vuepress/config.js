@@ -53,6 +53,7 @@ module.exports = {
           { text: "Kontakt", link: "/Kontakt/" },
           { text: "Blogi", link: "/blog/" },
           { text: "Asukoht", link: "/Asukoht/" },
+          { text: "Galerii", link: "/Galerii/" },
           {
             text: "Keel",
             ariaLabel: "Language Menu",
@@ -74,17 +75,17 @@ module.exports = {
         },
       },
     },
-    plugins: [
-      [
-        "vuepress-plugin-mailchimp",
-        {
-          endpoint: "https://gmail.us14.list-manage.com/subscribe/post?u=1129373554c4237148013af45&amp;id=100a06f5ff",
-          title: "Uudiskiri",
-          content: "Liituge meie uudiskirjaga",
-          submitText: "Liituge",
-        },
-      ],
-    ],
     footer: true,
   },
+  plugins: [
+    [
+      "vuepress-plugin-mailchimp",
+      {
+        endpoint: "https://gmail.us14.list-manage.com/subscribe/post?u=1129373554c4237148013af45&amp;id=100a06f5ff",
+        title: "Uudiskiri",
+        content: "Liituge meie uudiskirjaga",
+        submitText: "Liituge",
+      },
+    ],
+  ],
 };
