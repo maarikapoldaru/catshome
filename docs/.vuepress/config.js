@@ -40,6 +40,7 @@ module.exports = {
             link: "/Vabatahtlik/",
           },
           { text: "Kontakt", link: "/Kontakt/" },
+          { text: "Galerii", link: "/Galerii/" },
           {
             text: "Languages",
             ariaLabel: "Language Menu",
