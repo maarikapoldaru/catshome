@@ -51,7 +51,7 @@ module.exports = {
           },
           { text: "Külasta meid", link: "/Kulasta/" },
           { text: "Kontakt", link: "/Kontakt/" },
-          { text: "Blogi", link: "/Blogi/" },
+          { text: "Blogi", link: "/blog/" },
           {
             text: "Keel",
             ariaLabel: "Language Menu",
@@ -62,6 +62,15 @@ module.exports = {
             ],
           },
         ],
+        sidebar: {
+          "/blog/": [
+            {
+              title: "Kõik postitused",
+              collapsable: false,
+              children: ["my-first-blog", "my-second-blog"],
+            },
+          ],
+        },
       },
     },
     plugins: [
