@@ -1,5 +1,15 @@
 module.exports = {
   base: "/catshome/",
+  head: [
+    //tachyons.io style
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css",
+      },
+    ],
+  ],
   locales: {
     "/": {
       title: "Catshome",
@@ -19,6 +29,7 @@ module.exports = {
           { text: "Home", link: "/" },
           { text: "Otsivad kodu", link: "/Koduotsijad/" },
           { text: "Uues kodus", link: "/Kodus/" },
+          { text: "Tingimused Loomavõtjale", link: "/Tingimused/" },
           {
             text: "Toeta meid",
             ariaLabel: "Menu1",
