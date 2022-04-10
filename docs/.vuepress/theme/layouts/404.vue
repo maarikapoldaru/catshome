@@ -1,13 +1,13 @@
 <template>
   <main>
     <section>
-      <img src="/catshome/assets/img/404_cat.svg" alt="not found page cat" />
+      <img src="/catshome/assets/img/404_cat.svg" alt="ei leitud lehe kass" />
     </section>
     <section>
-      <h1>Page not found</h1>
+      <h1>Lehte ei leitud</h1>
     </section>
     <section>
-      <a href="/catshome/">Go to home page</a>
+      <a href="/catshome/">Tagasi avalehele</a>
     </section>
   </main>
 </template>
