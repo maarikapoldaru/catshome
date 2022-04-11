@@ -1,5 +1,6 @@
 const config = require("../../nightwatch.conf.js");
 
+//visual test
 module.exports = {
   before: function (browser, done) {
     server = require("../server")(done); // done is a callback that executes when the server is started
