@@ -1,0 +1,21 @@
+name: Run tests
+on:
+  push:
+    branches: ["*"]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Pull the code
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      #  Generating static files/Build
+      - name: Generate static vuepress files
+        uses: actions/setup-node@v1
+        with:
+          node-version: "16.x"
+      - run: npm install
+      - run: npm ci
+      - run: npm run e2e
