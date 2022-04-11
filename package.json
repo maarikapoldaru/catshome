@@ -18,6 +18,9 @@
     "vuepress": "^1.9.7",
     "vuepress-plugin-mailchimp": "^1.4.2"
   },
+  "engines": {
+    "node": "4.4.6"
+  },
   "dependencies": {
     "vue-gallery": "^2.0.1",
     "vue2-google-maps": "^0.10.7"
