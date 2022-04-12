@@ -6,15 +6,11 @@
     "docs:build": "vuepress build docs",
     "prettier:fix": "prettier --write .",
     "prettier:check": "prettier --check .",
-    "prepare": "husky install",
-    "e2e": "nightwatch --config nightwatch.conf.js"
+    "prepare": "husky install"
   },
   "devDependencies": {
-    "chromedriver": "^99.0.0",
     "husky": "^7.0.4",
-    "nightwatch": "^2.1.0",
     "prettier": "2.6.1",
-    "selenium-server": "^3.141.59",
     "vuepress": "^1.9.7",
     "vuepress-plugin-mailchimp": "^1.4.2"
   },
