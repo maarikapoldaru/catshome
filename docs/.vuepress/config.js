@@ -9,6 +9,13 @@ module.exports = {
         href: "https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css",
       },
     ],
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "styles/index.styl",
+      },
+    ],
   ],
   locales: {
     "/": {
