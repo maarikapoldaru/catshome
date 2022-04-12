@@ -1,14 +1,6 @@
 const config = require("../../nightwatch.conf.js");
 
 module.exports = {
-  before: function (browser, done) {
-    server = require("../server")(done); // done is a callback that executes when the server is started
-  },
-
-  after: function () {
-    server.close();
-  },
-
   "Kurru Murru Varjupaik": function (client) {
     client
       .url("http://localhost:8080/catshome/")
