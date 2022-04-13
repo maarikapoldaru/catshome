@@ -1,9 +1,2 @@
 node_modules/
 dist/
-npm-debug.log
-nohup.out
-selenium-debug.log
-selenium-server.log
-.DS_Store
-nightwatch/selenium.jar
-nightwatch/chromedriver
