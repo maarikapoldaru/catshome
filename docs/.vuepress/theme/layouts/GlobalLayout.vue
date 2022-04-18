@@ -7,6 +7,13 @@
         this is the footer
         <NavLink :item="privacy" />
         <NavLink :item="imprint" />
+        <div>
+          <!-- Start of WebFreeCounter Code -->
+          <a href="https://www.webfreecounter.com/" target="_blank">
+            <img src="https://www.webfreecounter.com/hit.php?id=gevqkaoc&nd=6&style=48" border="0" alt="web counter"
+          /></a>
+          <!-- End of WebFreeCounter Code -->
+        </div>
       </div>
     </div>
   </div>
