@@ -1,7 +1,7 @@
 <template>
   <!-- https://www.npmjs.com/package/vue2-google-maps -->
   <div>
-    <h2>Catshome asukoht Tallinnas</h2>
+    <!-- <h2>Catshome asukoht Tallinnas</h2> -->
 
     <gmap-map :center="center" :zoom="13" style="width: 100%; height: 555px">
       <gmap-marker :key="index" v-for="(gmp, index) in locations" :position="gmp" @click="center = gmp"></gmap-marker>
