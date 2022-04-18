@@ -27,7 +27,7 @@ module.exports = {
       lang: "en-US",
       title: "Kurru Murru Shelter",
       description: "Welcome to the cat's homepage!",
-    }
+    },
   },
 
   themeConfig: {
@@ -46,7 +46,7 @@ module.exports = {
               children: ["my-first-blog", "my-second-blog"],
             },
           ],
-          '/': [''], // fallback
+          "/": [""], // fallback
         },
         nav: [
           { text: "Esileht", link: "/" },
@@ -79,7 +79,7 @@ module.exports = {
           { text: "Blogi", link: "/blog/" },
           { text: "Asukoht", link: "/Asukoht/" },
           { text: "Galerii", link: "/Galerii/" },
-        ],    
+        ],
       },
       "/en/": {
         label: "English",
@@ -92,7 +92,7 @@ module.exports = {
               children: ["my-first-blog", "my-second-blog"],
             },
           ],
-          '/': [''], // fallback
+          "/": [""], // fallback
         },
         nav: [
           { text: "Home", link: "/en/" },
@@ -125,7 +125,7 @@ module.exports = {
           { text: "Blog", link: "/en/blog/" },
           { text: "Location", link: "/en/Location/" },
           { text: "Gallery", link: "/en/Gallery/" },
-        ],    
+        ],
       },
     },
     footer: true,
