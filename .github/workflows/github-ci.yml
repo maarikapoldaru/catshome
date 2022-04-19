@@ -17,6 +17,5 @@ jobs:
         with:
           node-version: "16.x"
       # install dependencies:
-      - run: npm install
       - run: npm ci
       - run: npm run e2e
