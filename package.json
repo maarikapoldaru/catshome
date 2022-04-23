@@ -17,6 +17,7 @@
   "dependencies": {
     "vue-carousel": "^0.18.0",
     "vue-gallery": "^2.0.1",
+    "vue-simple-accordion": "^0.1.0",
     "vue2-google-maps": "^0.10.7"
   }
 }
