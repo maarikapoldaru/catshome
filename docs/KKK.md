@@ -1,3 +1,0 @@
-# Korduma kippuvad küsimused
-
-<FAQ/>
