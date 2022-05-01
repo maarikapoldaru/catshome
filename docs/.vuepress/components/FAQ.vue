@@ -71,3 +71,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.vsa-list {
+  --vsa-highlight-color: #3eaf7c;
+}
+</style>
