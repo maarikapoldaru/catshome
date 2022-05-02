@@ -1,10 +1,8 @@
 <template>
   <div class="post-container">
-    <router-link v-for="(page,index) in files" :to="page.path" class="routerLink"  :key="index">
+    <router-link v-for="(page, index) in files" :to="page.path" class="routerLink" :key="index">
       <div class="card">
-        <img class="image-section"
-          :src="page.frontmatter.thumbnail"
-          :alt="page.title">
+        <img class="image-section" :src="page.frontmatter.thumbnail" :alt="page.title" />
 
         <div class="post-detail">
           <div class="title-section">{{ page.title }}</div>
@@ -18,20 +16,18 @@
 export default {
   computed: {
     files() {
-      return this.$site.pages
-        .filter(p => {
-          return p.path.indexOf('/kodus/cats/') >= 0;
-        });
-    }
-  }
-}
-</script>
+      return this.$site.pages.filter((p) => {
+        return p.path.indexOf("/kodus/cats/") >= 0;
+      });
+    },
+  },
+};
 </script>
 <style scoped>
 .post-container {
   display: flex;
   flex-wrap: wrap;
-  flex:1;
+  flex: 1;
 }
 .card {
   display: flex;
@@ -44,7 +40,6 @@ export default {
   border-radius: 3px;
   padding: 5px;
   font-size: 1rem;
-
 }
 .post-detail {
   display: flex;
@@ -54,19 +49,19 @@ export default {
   height: 100%;
   width: 100%;
 }
-.routerLink{
-     text-decoration: none !important;
- }
+.routerLink {
+  text-decoration: none !important;
+}
 .description-section {
   width: 100%;
   display: flex;
   justify-content: center;
-  color:black;
+  color: black;
   margin: 10px;
 }
 .title-section {
   text-decoration: none;
   margin: 10px;
-  color:black;
+  color: black;
 }
 </style>
