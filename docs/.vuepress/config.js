@@ -1,3 +1,5 @@
+const dp = require("./defaultPath.cjs");
+
 // The following makes it easier to properly edit config using only VSC
 /** @type {import("../../node_modules/vuepress/config.js").Config} */
 const CONFIG = {
@@ -102,31 +104,31 @@ const CONFIG = {
             text: "Cats",
             ariaLabel: "Cat Menu",
             items: [
-              { text: "Looking for a home", link: "/en/HomeSeekers/" },
-              { text: "In a new home", link: "/en/AtHome/" },
+              { text: "Looking for a home", link: dp("/en/HomeSeekers/") },
+              { text: "In a new home", link: dp("/en/AtHome/") },
             ],
           },
           {
             text: "Useful",
             ariaLabel: "FAQ menu",
             items: [
-              { text: "Conditions for the animal keeper", link: "/en/Conditions/" },
-              { text: "Frequently asked Questions", link: "/en/FAQ/" },
+              { text: "Conditions for the animal keeper", link: dp("/en/Conditions/") },
+              { text: "Frequently asked Questions", link: dp("/en/FAQ/") },
             ],
           },
           {
             text: "Support us",
             ariaLabel: "Support Menu",
             items: [
-              { text: "Become a volunteer", link: "/en/Volunteer" },
-              { text: "Donate", link: "/en/Donate" },
+              { text: "Become a volunteer", link: dp("/en/Volunteer") },
+              { text: "Donate", link: dp("/en/Donate") },
             ],
           },
-          { text: "Visit us", link: "/en/Visit/" },
-          { text: "Contact", link: "/en/Contact/" },
-          { text: "Blog", link: "/en/blog/" },
-          { text: "Location", link: "/en/Location/" },
-          { text: "Gallery", link: "/en/Gallery/" },
+          { text: "Visit us", link: dp("/en/Visit/") },
+          { text: "Contact", link: dp("/en/Contact/") },
+          { text: "Blog", link: dp("/en/blog/") },
+          { text: "Location", link: dp("/en/Location/") },
+          { text: "Gallery", link: dp("/en/Gallery/") },
         ],
       },
     },
