@@ -6,15 +6,21 @@
     "docs:build": "vuepress build docs",
     "prettier:fix": "prettier --write .",
     "prettier:check": "prettier --check .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "nightwatch",
+    "test-selenium": "nightwatch -c nightwatch-selenium.conf.js"
   },
   "devDependencies": {
+    "chromedriver": "^101.0.0",
+    "geckodriver": "^3.0.1",
     "husky": "^7.0.4",
+    "nightwatch": "^2.1.4",
     "prettier": "2.6.1",
     "vuepress": "^1.9.7",
     "vuepress-plugin-mailchimp": "^1.4.2"
   },
   "dependencies": {
+    "@nightwatch/selenium-server": "^4.1.2",
     "vue-carousel": "^0.18.0",
     "vue-gallery": "^2.0.1",
     "vue-simple-accordion": "^0.1.0",
