@@ -1,5 +1,5 @@
 //
-// Refer to the online docs for more details:
+// Refer to the online docs for more details::
 // https://nightwatchjs.org/gettingstarted/configuration/
 //
 //  _   _  _         _      _                     _          _
