@@ -1,4 +1,6 @@
-module.exports = {
+// The following makes it easier to properly edit config using only VSC
+/** @type {import("../../node_modules/vuepress/config.js").Config} */
+const CONFIG = {
   base: "/catshome/",
   head: [
     //tachyons.io style
@@ -54,15 +56,15 @@ module.exports = {
             text: "Kassid",
             ariaLabel: "Cat Menu",
             items: [
-              { text: "Otsivad kodu", link: "/Koduotsijad/" },
-              { text: "Uues kodus", link: "/Kodus/" },
+              { text: "Otsivad kodu", link: "/HomeSeekers/" },
+              { text: "Uues kodus", link: "/AtHome/" },
             ],
           },
           {
             text: "Kasulikku",
             ariaLabel: "FAQ menu",
             items: [
-              { text: "Tingimused loomavõtjale", link: "/Tingimused/" },
+              { text: "Tingimused loomavõtjale", link: "/Conditions/" },
               { text: "Korduma kippuvad küsimused", link: "/KKK/" },
             ],
           },
@@ -70,15 +72,15 @@ module.exports = {
             text: "Toeta meid",
             ariaLabel: "Support Menu",
             items: [
-              { text: "Tule vabatahtlikuks", link: "/Vabatahtlik" },
-              { text: "Anneta", link: "/Anneta" },
+              { text: "Tule vabatahtlikuks", link: "/Volunteer" },
+              { text: "Anneta", link: "/Donate" },
             ],
           },
-          { text: "Külasta meid", link: "/Kulasta/" },
-          { text: "Kontakt", link: "/Kontakt/" },
+          { text: "Külasta meid", link: "/Visit/" },
+          { text: "Kontakt", link: "/Contact/" },
           { text: "Blogi", link: "/blog/" },
-          { text: "Asukoht", link: "/Asukoht/" },
-          { text: "Galerii", link: "/Galerii/" },
+          { text: "Asukoht", link: "/Location/" },
+          { text: "Galerii", link: "/Gallery/" },
         ],
       },
       "/en/": {
@@ -100,8 +102,8 @@ module.exports = {
             text: "Cats",
             ariaLabel: "Cat Menu",
             items: [
-              { text: "Looking for a home", link: "/en/Homeseekers/" },
-              { text: "In a new home", link: "/en/Athome/" },
+              { text: "Looking for a home", link: "/en/HomeSeekers/" },
+              { text: "In a new home", link: "/en/AtHome/" },
             ],
           },
           {
@@ -142,3 +144,5 @@ module.exports = {
     ],
   ],
 };
+
+module.exports = CONFIG;
