@@ -4,7 +4,9 @@
 
     <section v-if="testRunning">
       <form @submit="handleSubmit">
-        <div class="error-msg" v-if="displayErrorMsg">{{ selectAllErrorMsg[this.$lang] }}</div>
+        <div class="error-msg" v-if="displayErrorMsg">
+          {{ selectAllErrorMsg[this.$lang] }}
+        </div>
         <p>1. {{ questions[0][this.$lang] }}</p>
         <div>
           <label>
@@ -38,13 +40,17 @@
     <section class="flex-column" v-if="!testRunning && testResult >= 0">
       <p>{{ resultMessages[testResult][this.$lang] }}</p>
 
-      <button class="btn" @click="beginTest">{{ startTestButton[this.$lang] }}</button>
+      <button class="btn" @click="beginTest">
+        {{ startTestButton[this.$lang] }}
+      </button>
     </section>
 
     <section class="flex-column" v-if="!testRunning && testResult === -1">
       <p>{{ testIntroduction[this.$lang] }}</p>
 
-      <button class="btn" @click="beginTest">{{ startTestButton[this.$lang] }}</button>
+      <button class="btn" @click="beginTest">
+        {{ startTestButton[this.$lang] }}
+      </button>
     </section>
   </section>
 </template>
