@@ -6,7 +6,9 @@
     "docs:build": "vuepress build docs",
     "prettier:fix": "prettier --write .",
     "prettier:check": "prettier --check .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "nightwatch",
+    "test-selenium": "nightwatch -c nightwatch-selenium.conf.js"
   },
   "devDependencies": {
     "husky": "^7.0.4",

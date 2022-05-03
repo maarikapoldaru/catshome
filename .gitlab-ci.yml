@@ -1,0 +1,20 @@
+image: node:16
+stages:
+  - test
+test:
+  stage: test
+  services:
+    - selenium/standalone-chrome
+  variables:
+    SELENIUM_HOST: selenium__standalone-chrome
+  script:
+    - yarn
+    - yarn test-selenium "/tests/main.js"
+  artifacts:
+    when: always
+    paths:
+      - tests_output/
+    expire_in: 1 hour
+  steps:
+    - run: npm ci
+    - run: npm test-selenium
