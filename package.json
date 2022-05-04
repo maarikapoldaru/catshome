@@ -15,6 +15,9 @@
     "vuepress-plugin-mailchimp": "^1.4.2"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-brands-svg-icons": "^6.1.1",
+    "@fortawesome/vue-fontawesome": "^2.0.6",
     "vue-carousel": "^0.18.0",
     "vue-gallery": "^2.0.1",
     "vue-simple-accordion": "^0.1.0",
