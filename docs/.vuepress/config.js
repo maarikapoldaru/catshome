@@ -28,6 +28,11 @@ module.exports = {
       title: "Kurru Murru Shelter",
       description: "Welcome to the cat's homepage!",
     },
+    "/fr/": {
+      lang: "fr",
+      title: "Kurru Murru Abri",
+      description: "Bienvenue sur la page d'accueil du chat !",
+    },
   },
 
   themeConfig: {
@@ -125,6 +130,52 @@ module.exports = {
           { text: "Blog", link: "/en/blog/" },
           { text: "Location", link: "/en/Location/" },
           { text: "Gallery", link: "/en/Gallery/" },
+        ],
+      },
+      "/fr/": {
+        label: "français",
+        selectText: "Languages",
+        sidebar: {
+          "/fr/blog/": [
+            {
+              title: "Tous les messages",
+              collapsable: false,
+              children: ["my-first-blog", "my-second-blog"],
+            },
+          ],
+          "/": [""], // fallback
+        },
+        nav: [
+          { text: "Page D’Accueil", link: "/fr/" },
+          {
+            text: "Chattes",
+            ariaLabel: "Chat Menu",
+            items: [
+              { text: "chats à la recherche d'un foyer", link: "/fr/Homeseekers/" },
+              { text: "chats dans une nouvelle maison", link: "/fr/Athome/" },
+            ],
+          },
+          {
+            text: "Utile",
+            ariaLabel: "Foire aux questions",
+            items: [
+              { text: "Conditions pour le gardien d'animaux", link: "/fr/Conditions/" },
+              { text: "Questions fréquemment posées", link: "/fr/FAQ/" },
+            ],
+          },
+          {
+            text: "Soutenez-nous",
+            ariaLabel: "Menu d'assistance",
+            items: [
+              { text: "Devenez bénévole", link: "/fr/Volunteer" },
+              { text: "Donner", link: "/fr/Donate" },
+            ],
+          },
+          { text: "Rendez nous visite", link: "/fr/Visit/" },
+          { text: "Contacter", link: "/fr/Contact/" },
+          { text: "Blog", link: "/fr/blog/" },
+          { text: "Emplacement", link: "/fr/Location/" },
+          { text: "Galerie", link: "/fr/Gallery/" },
         ],
       },
     },
