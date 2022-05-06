@@ -1,7 +1,5 @@
 <template>
-  <ParentLayout>
-    <template #page-bottom> </template>
-  </ParentLayout>
+  <ParentLayout> </ParentLayout>
 </template>
 
 <script>
