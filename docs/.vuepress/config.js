@@ -43,7 +43,7 @@ module.exports = {
             {
               title: "Kõik postitused",
               collapsable: false,
-              children: ["my-first-blog", "my-second-blog"],
+              children: ["pesemine", "hambad", "toit", "kadunud", "koostisosad", "labisaamine"],
             },
           ],
           "/": [""], // fallback
@@ -122,7 +122,7 @@ module.exports = {
           },
           { text: "Visit us", link: "/en/Visit/" },
           { text: "Contact", link: "/en/Contact/" },
-          { text: "Blog", link: "/en/blog/" },
+          { text: "Blog", link: "/blog/" },
           { text: "Location", link: "/en/Location/" },
           { text: "Gallery", link: "/en/Gallery/" },
         ],
