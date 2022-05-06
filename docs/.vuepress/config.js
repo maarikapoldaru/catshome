@@ -131,7 +131,7 @@ module.exports = {
     footer: true,
   },
   plugins: [
-    ['flexsearch'],
+    ["flexsearch"],
     [
       "vuepress-plugin-mailchimp",
       {
