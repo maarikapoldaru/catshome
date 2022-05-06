@@ -1,7 +1,6 @@
 <template>
   <ParentLayout>
-    <template #page-bottom>
-    </template>
+    <template #page-bottom> </template>
   </ParentLayout>
 </template>
 
