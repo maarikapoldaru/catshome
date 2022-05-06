@@ -31,7 +31,7 @@
             <!-- End of WebFreeCounter Code -->
           </div>
         </div>
-      </div>
+      </div> 
     </div>
   </div>
 </template>

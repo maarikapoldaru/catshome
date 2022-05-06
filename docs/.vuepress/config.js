@@ -128,7 +128,7 @@ module.exports = {
         ],
       },
     },
-    footer: true,
+    footer: false,
   },
   plugins: [
     [
