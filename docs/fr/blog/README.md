@@ -1,5 +1,5 @@
 ---
-Titre : Tous les messages
+Titre: Tous les messages
 ---
 
 # Lisez notre blog!
