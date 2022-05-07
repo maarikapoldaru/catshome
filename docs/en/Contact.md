@@ -2,7 +2,7 @@
 footer: Copyright © 2022
 ---
 
-# Kontaktid
+# Contacts
 
 <Location/>
 <SimpleNewsletter/>
