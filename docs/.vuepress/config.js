@@ -28,12 +28,17 @@ module.exports = {
       title: "Kurru Murru Shelter",
       description: "Welcome to the cat's homepage!",
     },
+    "/fr/": {
+      lang: "fr",
+      title: "Kurru Murru Abri",
+      description: "Bienvenue sur la page d'accueil du chat !",
+    },
   },
 
   themeConfig: {
     docsDir: "docs",
     logo: "assets/img/KurruMurru-varjupaik.png",
-    search: false,
+    search: true,
     locales: {
       "/": {
         label: "Eesti",
@@ -64,6 +69,7 @@ module.exports = {
             items: [
               { text: "Tingimused loomavõtjale", link: "/Tingimused/" },
               { text: "Korduma kippuvad küsimused", link: "/KKK/" },
+              { text: "Kassi omamise kalkulaator", link: "/Kalkulaator/" },
             ],
           },
           {
@@ -74,10 +80,8 @@ module.exports = {
               { text: "Anneta", link: "/Anneta" },
             ],
           },
-          { text: "Külasta meid", link: "/Kulasta/" },
           { text: "Kontakt", link: "/Kontakt/" },
           { text: "Blogi", link: "/blog/" },
-          { text: "Asukoht", link: "/Asukoht/" },
           { text: "Galerii", link: "/Galerii/" },
         ],
       },
@@ -110,6 +114,7 @@ module.exports = {
             items: [
               { text: "Conditions for the animal keeper", link: "/en/Conditions/" },
               { text: "Frequently asked Questions", link: "/en/FAQ/" },
+              { text: "Cat ownership calculator", link: "/en/Calculator/" },
             ],
           },
           {
@@ -120,17 +125,63 @@ module.exports = {
               { text: "Donate", link: "/en/Donate" },
             ],
           },
-          { text: "Visit us", link: "/en/Visit/" },
           { text: "Contact", link: "/en/Contact/" },
           { text: "Blog", link: "/blog/" },
           { text: "Location", link: "/en/Location/" },
           { text: "Gallery", link: "/en/Gallery/" },
         ],
       },
+      "/fr/": {
+        label: "français",
+        selectText: "Languages",
+        sidebar: {
+          "/fr/blog/": [
+            {
+              title: "Tous les messages",
+              collapsable: false,
+              children: ["my-first-blog", "my-second-blog"],
+            },
+          ],
+          "/": [""], // fallback
+        },
+        nav: [
+          { text: "Page D’Accueil", link: "/fr/" },
+          {
+            text: "Chattes",
+            ariaLabel: "Chat Menu",
+            items: [
+              { text: "chats à la recherche d'un foyer", link: "/fr/Homeseekers/" },
+              { text: "chats dans une nouvelle maison", link: "/fr/Athome/" },
+            ],
+          },
+          {
+            text: "Utile",
+            ariaLabel: "Foire aux questions",
+            items: [
+              { text: "Conditions pour le gardien d'animaux", link: "/fr/Conditions/" },
+              { text: "Questions fréquemment posées", link: "/fr/FAQ/" },
+            ],
+          },
+          {
+            text: "Soutenez-nous",
+            ariaLabel: "Menu d'assistance",
+            items: [
+              { text: "Devenez bénévole", link: "/fr/Volunteer" },
+              { text: "Donner", link: "/fr/Donate" },
+            ],
+          },
+          { text: "Rendez nous visite", link: "/fr/Visit/" },
+          { text: "Contacter", link: "/fr/Contact/" },
+          { text: "Blog", link: "/fr/blog/" },
+          { text: "Emplacement", link: "/fr/Location/" },
+          { text: "Galerie", link: "/fr/Gallery/" },
+        ],
+      },
     },
     footer: true,
   },
   plugins: [
+    ["flexsearch"],
     [
       "vuepress-plugin-mailchimp",
       {
