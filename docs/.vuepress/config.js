@@ -33,7 +33,7 @@ module.exports = {
   themeConfig: {
     docsDir: "docs",
     logo: "assets/img/KurruMurru-varjupaik.png",
-    search: false,
+    search: true,
     locales: {
       "/": {
         label: "Eesti",
@@ -127,6 +127,7 @@ module.exports = {
     footer: true,
   },
   plugins: [
+    ["flexsearch"],
     [
       "vuepress-plugin-mailchimp",
       {
