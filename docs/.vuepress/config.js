@@ -64,6 +64,7 @@ module.exports = {
             items: [
               { text: "Tingimused loomavõtjale", link: "/Tingimused/" },
               { text: "Korduma kippuvad küsimused", link: "/KKK/" },
+              { text: "Kassi omamise kalkulaator", link: "/Kalkulaator/" },
             ],
           },
           {
@@ -108,6 +109,7 @@ module.exports = {
             items: [
               { text: "Conditions for the animal keeper", link: "/en/Conditions/" },
               { text: "Frequently asked Questions", link: "/en/FAQ/" },
+              { text: "Cat ownership calculator", link: "/en/Calculator/" },
             ],
           },
           {
