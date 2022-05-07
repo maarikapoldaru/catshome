@@ -33,7 +33,7 @@ module.exports = {
   themeConfig: {
     docsDir: "docs",
     logo: "assets/img/KurruMurru-varjupaik.png",
-    search: false,
+    search: true,
     locales: {
       "/": {
         label: "Eesti",
@@ -74,10 +74,8 @@ module.exports = {
               { text: "Anneta", link: "/Anneta" },
             ],
           },
-          { text: "Külasta meid", link: "/Kulasta/" },
           { text: "Kontakt", link: "/Kontakt/" },
           { text: "Blogi", link: "/blog/" },
-          { text: "Asukoht", link: "/Asukoht/" },
           { text: "Galerii", link: "/Galerii/" },
         ],
       },
@@ -120,10 +118,8 @@ module.exports = {
               { text: "Donate", link: "/en/Donate" },
             ],
           },
-          { text: "Visit us", link: "/en/Visit/" },
           { text: "Contact", link: "/en/Contact/" },
           { text: "Blog", link: "/en/blog/" },
-          { text: "Location", link: "/en/Location/" },
           { text: "Gallery", link: "/en/Gallery/" },
         ],
       },
@@ -131,6 +127,7 @@ module.exports = {
     footer: true,
   },
   plugins: [
+    ["flexsearch"],
     [
       "vuepress-plugin-mailchimp",
       {
