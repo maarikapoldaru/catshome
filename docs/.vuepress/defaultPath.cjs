@@ -37,7 +37,7 @@ function defaultPath(pagePath) {
 
   if (isPageInFolder(path.dirname(resolvedPath), pagePath)) return pagePath;
   // Assumes file doesn't exist since it doesn't exist at given local
-  const defaultPath = pagePath.replace(/^\/.+\//, "/");
+  const defaultPath = pagePath.replace(/^\/.*?\//, "/");
   return defaultPath;
 }
 
