@@ -178,7 +178,7 @@ module.exports = {
         ],
       },
     },
-    footer: false,
+    footer: true,
   },
   plugins: [
     ["flexsearch"],
