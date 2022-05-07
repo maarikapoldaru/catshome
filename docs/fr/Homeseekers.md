@@ -12,7 +12,7 @@ footer: Copyright © 2022
     <div class="pv4 ph3 ph0-l black">
       <div class="flex flex-column flex-row-ns">
         <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <img src="/assets/img/toomas.jpeg" class="db" alt="Photo d'un chat.">
+          <img :src="$withBase('/assets/img/toomas.jpeg')" class="db" alt="Photo d'un chat.">
         </div>
         <div class="w-100 w-60-ns pl3-ns">
           <h1 class="f3 fw1 baskerville mt0 lh-title">Toomas</h1>
@@ -30,7 +30,7 @@ footer: Copyright © 2022
     <div class="pv4 ph3 ph0-l black">
       <div class="flex flex-column flex-row-ns">
         <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <img src="/assets/img/sass.jpeg" class="db" alt="Photo d'un chat.">
+          <img :src="$withBase('/assets/img/sass.jpeg')" class="db" alt="Photo d'un chat.">
         </div>
         <div class="w-100 w-60-ns pl3-ns">
           <h1 class="f3 fw1 baskerville mt0 lh-title">Sass</h1>
@@ -48,7 +48,7 @@ footer: Copyright © 2022
     <div class="pv4 ph3 ph0-l black">
       <div class="flex flex-column flex-row-ns">
         <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <img src="/assets/img/triibik.jpeg" class="db" alt="Photo d'un chat.">
+          <img :src="$withBase('/assets/img/triibik.jpeg')" class="db" alt="Photo d'un chat.">
         </div>
         <div class="w-100 w-60-ns pl3-ns">
           <h1 class="f3 fw1 baskerville mt0 lh-title">Triibik</h1>
@@ -66,7 +66,7 @@ footer: Copyright © 2022
     <div class="pv4 ph3 ph0-l black">
       <div class="flex flex-column flex-row-ns">
         <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <img src="/assets/img/fanny.jpeg" class="db" alt="Photo d'un chat.">
+          <img :src="$withBase('/assets/img/fanny.jpeg')" class="db" alt="Photo d'un chat.">
         </div>
         <div class="w-100 w-60-ns pl3-ns">
           <h1 class="f3 fw1 baskerville mt0 lh-title">Fanny</h1>
@@ -84,7 +84,7 @@ footer: Copyright © 2022
     <div class="pv4 ph3 ph0-l black">
       <div class="flex flex-column flex-row-ns">
         <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <img src="/assets/img/tips.jpeg" class="db" alt="Photo d'un chat.">
+          <img :src="$withBase('/assets/img/tips.jpeg')" class="db" alt="Photo d'un chat.">
         </div>
         <div class="w-100 w-60-ns pl3-ns">
           <h1 class="f3 fw1 baskerville mt0 lh-title">Tips</h1>
@@ -102,7 +102,7 @@ footer: Copyright © 2022
     <div class="pv4 ph3 ph0-l black">
       <div class="flex flex-column flex-row-ns">
         <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <img src="/assets/img/piibe.jpg" class="db" alt="Photo d'un chat.">
+          <img :src="$withBase('/assets/img/piibe.jpg')" class="db" alt="Photo d'un chat.">
         </div>
         <div class="w-100 w-60-ns pl3-ns">
           <h1 class="f3 fw1 baskerville mt0 lh-title">Piibe</h1>
@@ -120,7 +120,7 @@ footer: Copyright © 2022
     <div class="pv4 ph3 ph0-l black">
       <div class="flex flex-column flex-row-ns">
         <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <img src="/assets/img/bronto.jpeg" class="db" alt="Photo d'un chat.">
+          <img :src="$withBase('/assets/img/bronto.jpeg')" class="db" alt="Photo d'un chat.">
         </div>
         <div class="w-100 w-60-ns pl3-ns">
           <h1 class="f3 fw1 baskerville mt0 lh-title">Bronto</h1>
@@ -138,7 +138,7 @@ footer: Copyright © 2022
     <div class="pv4 ph3 ph0-l black">
       <div class="flex flex-column flex-row-ns">
         <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <img src="/assets/img/simba.jpeg" class="db" alt="Photo d'un chat.">
+          <img :src="$withBase('/assets/img/simba.jpeg')" class="db" alt="Photo d'un chat.">
         </div>
         <div class="w-100 w-60-ns pl3-ns">
           <h1 class="f3 fw1 baskerville mt0 lh-title">Simba</h1>
@@ -156,7 +156,7 @@ footer: Copyright © 2022
     <div class="pv4 ph3 ph0-l black">
       <div class="flex flex-column flex-row-ns">
         <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <img src="/assets/img/pepe.jpeg" class="db" alt="Photo d'un chat.">
+          <img :src="$withBase('/assets/img/pepe.jpeg')" class="db" alt="Photo d'un chat.">
         </div>
         <div class="w-100 w-60-ns pl3-ns">
           <h1 class="f3 fw1 baskerville mt0 lh-title">Pepe</h1>
@@ -174,7 +174,7 @@ footer: Copyright © 2022
     <div class="pv4 ph3 ph0-l black">
       <div class="flex flex-column flex-row-ns">
         <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <img src="/assets/img/elli.jpeg" class="db" alt="Photo d'un chat.">
+          <img :src="$withBase('/assets/img/elli.jpeg')" class="db" alt="Photo d'un chat.">
         </div>
         <div class="w-100 w-60-ns pl3-ns">
           <h1 class="f3 fw1 baskerville mt0 lh-title">Elli</h1>

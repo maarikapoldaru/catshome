@@ -1,7 +1,7 @@
 <template>
   <main>
     <section>
-      <img src="/catshome/assets/img/404_cat.svg" alt="ei leitud lehe kass" />
+      <img :src="$withBase('/assets/img/404_cat.svg')" alt="ei leitud lehe kass" />
     </section>
     <section>
       <h1>Lehte ei leitud</h1>

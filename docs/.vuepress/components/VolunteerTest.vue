@@ -9,12 +9,12 @@
         <div>
           <label>
             <input type="radio" name="catSelect" value="1" v-model="answers[0]" />
-            <img src="/catshome/assets/img/cat_picture.svg" />
+            <img :src="$withBase('/assets/img/cat_picture.svg')" />
           </label>
 
           <label>
             <input type="radio" name="catSelect" value="0" v-model="answers[0]" />
-            <img src="/catshome/assets/img/dog_picture.svg" />
+            <img :src="$withBase('/assets/img/dog_picture.svg')" />
           </label>
         </div>
 
@@ -22,12 +22,12 @@
         <div>
           <label>
             <input type="radio" name="likeSelect" value="1" v-model="answers[1]" />
-            <img src="/catshome/assets/img/wool_picture.svg" />
+            <img :src="$withBase('/assets/img/wool_picture.svg')" />
           </label>
 
           <label>
             <input type="radio" name="likeSelect" value="0" v-model="answers[1]" />
-            <img src="/catshome/assets/img/dog_picture.svg" />
+            <img :src="$withBase('/assets/img/dog_picture.svg')" />
           </label>
         </div>
 
